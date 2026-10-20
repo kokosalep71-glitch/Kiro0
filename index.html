@@ -1,0 +1,298 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b0b12">
+  <title>Kiro | My Links</title>
+
+  <style>
+    :root {
+      --bg: #0b0b12;
+      --card: #151520;
+      --purple: #a78bfa;
+      --pink: #f0abfc;
+      --text: #f7f4ff;
+      --muted: #aaa6bc;
+      --border: #ffffff12;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      padding: 35px 16px;
+      font-family: Arial, Tahoma, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(ellipse at top, #312052 0%, transparent 45%),
+        var(--bg);
+    }
+
+    .container {
+      max-width: 510px;
+      margin: auto;
+    }
+
+    .profile {
+      text-align: center;
+      padding: 20px 12px 28px;
+    }
+
+    .avatar {
+      width: 112px;
+      height: 112px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--purple);
+      padding: 4px;
+      background: var(--card);
+      box-shadow: 0 0 35px #a78bfa35;
+    }
+
+    .avatar-placeholder {
+      width: 112px;
+      height: 112px;
+      margin: auto;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      font-size: 40px;
+      font-weight: bold;
+      color: var(--purple);
+      border: 2px solid var(--purple);
+      background: var(--card);
+      box-shadow: 0 0 35px #a78bfa35;
+    }
+
+    h1 {
+      margin: 17px 0 8px;
+      font-size: 30px;
+      letter-spacing: 1px;
+    }
+
+    .username {
+      color: var(--pink);
+      margin: 0 0 12px;
+    }
+
+    .bio {
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.8;
+    }
+
+    .badge {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 7px 13px;
+      border: 1px solid #a78bfa45;
+      border-radius: 20px;
+      color: var(--purple);
+      font-size: 12px;
+    }
+
+    .section-title {
+      font-size: 13px;
+      color: var(--muted);
+      margin: 12px 5px;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .link-card {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      width: 100%;
+      padding: 15px;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      color: var(--text);
+      text-decoration: none;
+      background: #151520d9;
+      transition: .2s ease;
+    }
+
+    .link-card:hover {
+      transform: translateY(-3px);
+      border-color: var(--purple);
+      background: #211b32;
+    }
+
+    .link-icon {
+      width: 44px;
+      height: 44px;
+      display: grid;
+      place-items: center;
+      flex-shrink: 0;
+      border-radius: 13px;
+      background: #a78bfa17;
+      font-size: 23px;
+    }
+
+    .link-info {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .link-info strong {
+      display: block;
+      font-size: 15px;
+      margin-bottom: 5px;
+    }
+
+    .link-info span {
+      display: block;
+      font-size: 12px;
+      color: var(--muted);
+      direction: ltr;
+      text-align: right;
+      overflow-wrap: anywhere;
+    }
+
+    .arrow {
+      color: var(--purple);
+      font-size: 21px;
+    }
+
+    .share {
+      display: block;
+      width: 100%;
+      margin-top: 22px;
+      padding: 14px;
+      border: none;
+      border-radius: 14px;
+      color: #160f22;
+      font-weight: bold;
+      font-size: 15px;
+      background: linear-gradient(100deg, var(--purple), var(--pink));
+      cursor: pointer;
+    }
+
+    .share:hover {
+      filter: brightness(1.08);
+    }
+
+    #status {
+      min-height: 20px;
+      margin-top: 10px;
+      color: var(--pink);
+      text-align: center;
+      font-size: 13px;
+    }
+
+    footer {
+      text-align: center;
+      color: #777187;
+      font-size: 12px;
+      margin-top: 35px;
+    }
+
+    @media (max-width: 360px) {
+      h1 { font-size: 25px; }
+      .link-card { padding: 12px; }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container">
+
+    <header class="profile">
+      <!-- لتغيير الحروف بصورة شخصية، استبدل div بالصورة الموضحة أسفل الكود -->
+      <div class="avatar-placeholder">K</div>
+
+      <h1>Kiro Salep</h1>
+      <p class="username"></p>
+
+      <p class="bio">
+        خش برجلك اليمين ✨
+        <br>
+        
+      </p>
+
+      <span class="badge">💻 coding , cs</span>
+    </header>
+
+    
+
+    <section class="links">
+
+      <a class="link-card" href="https://www.instagram.com/kiro_salep_99/" target="_blank" rel="noopener noreferrer">
+          <strong>Instagram</strong>
+        
+        </div>
+        <span class="arrow"></span>
+      </a>
+
+      <a class="link-card" href="https://www.facebook.com/kiro.salep/" target="_blank" rel="noopener noreferrer">
+
+          <strong>Facebook</strong>
+          
+        </div>
+        <span class="arrow"></span>
+      </a>
+
+      <a class="link-card" href="https://www.tiktok.com/@kiro_salep_99?_r=1&_t=ZS-9AijjNFtKuQ" target="_blank" rel="noopener noreferrer">
+    
+          <strong>TikTok</strong>
+          
+        </div>
+        <span class="arrow"></span>
+      </a>
+
+      <a class="link-card" href="https://www.snapchat.com/add/kiro_salep?share_id=sGOf3DNxef4&locale=ar-EG" target="_blank" rel="noopener noreferrer">
+        
+          <strong>snapchat</strong>
+          
+        </div>
+        <span class="arrow"></span>
+      </a>
+
+    
+      </a>
+
+    </section>
+
+    <button class="share" id="shareBtn">🔗 انسخ رابط صفحتي</button>
+    <p id="status" role="status"></p>
+
+    <footer>
+      Made with  by Kiro
+      <br><br>
+      © 2026 All rights reserved.
+    </footer>
+
+  </main>
+
+  <script>
+    const shareBtn = document.getElementById("shareBtn");
+    const status = document.getElementById("status");
+
+    shareBtn.addEventListener("click", async () => {
+      if (location.protocol === "file:") {
+        status.textContent =
+          "ارفع الصفحة على الإنترنت أولًا عشان تنسخ رابطًا يقدر غيرك يفتحه.";
+        return;
+      }
+
+      try {
+        await navigator.clipboard.writeText(location.href);
+        status.textContent = "تم نسخ رابط الصفحة بنجاح ✓";
+      } catch {
+        status.textContent =
+          "انسخ الرابط من شريط العنوان في المتصفح.";
+      }
+    });
+  </script>
+</body>
+</html>
